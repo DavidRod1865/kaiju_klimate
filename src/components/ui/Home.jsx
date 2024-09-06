@@ -102,7 +102,7 @@ const Home = () => {
       <img
         src={kaijuDescription.icon}
         alt="Kaiju Icon"
-        className="absolute inset-0 w-screen h-screen object-cover z-1"
+        className="absolute inset-0 w-screen h-full object-cover z-1"
       />
       <div className="flex flex-col items-center h-screen w-screen">
         <Header onSearch={handleLocationSearch} />
