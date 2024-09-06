@@ -63,14 +63,14 @@ const LocationLoading = ({ onLocationFound }) => {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center font-creepster text-5xl text-cyan-500 text-outline-blue">
-        <p>Searching for Location</p>
+      <div className="flex flex-col items-center justify-center font-creepster text-5xl text-cyan-500 text-outline-blue">
+        <p className="text-center">Searching for Location</p>
         <img
-          className="w-80 m-5 border-2 border-red-600"
+          className="w-80 m-5"
           src={randomGif}
           alt="Godzilla Stomp"
         />
-        <p>Monster Weather Incoming</p>
+        <p className="text-center">Monster Weather Incoming</p>
       </div>
     );
   }

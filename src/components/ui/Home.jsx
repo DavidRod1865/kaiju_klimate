@@ -11,6 +11,7 @@ import WeeklyForecast from "./WeeklyForecast";
 import Header from "./Header";
 import CurrentForecast from "./CurrentForecast";
 import WarningAlert from "./WarningAlert";
+import ChillAlert from "./ChillAlert";
 
 const Home = () => {
   const [location, setLocation] = useState(null);
@@ -98,25 +99,26 @@ const Home = () => {
   }
 
   return (
-    <>
-      <img
-        src={kaijuDescription.icon}
-        alt="Kaiju Icon"
-        className="absolute inset-0 w-screen h-full object-cover z-1"
-      />
-      <div className="flex flex-col items-center h-screen w-screen">
-        <Header onSearch={handleLocationSearch} />
-        <CurrentForecast weather={currentWeather} />
+    <div
+      className="flex flex-col items-center min-h-screen w-full bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(${kaijuDescription.icon})` }}
+    >
+      <Header onSearch={handleLocationSearch} />
+      <CurrentForecast weather={currentWeather} />
+
+      {kaijuDescription.name === "Chill Day" ? (
+        <ChillAlert kaijuDescription={kaijuDescription} />
+      ) : (
         <WarningAlert kaijuDescription={kaijuDescription} />
-      </div>
-      
-      <div className="bg-black border-red-500 border-4 bg-opacity-90 relative z-10 mb-3">
-        <h2 className="text-5xl text-yellow-300 text-center relative z-10 font-creepster">
+      )}
+
+      <div className="flex flex-col bg-black border-yellow-300 border-4 bg-opacity-90 mb-3 p-4 md:w-fit">
+        <h2 className="text-3xl md:text-5xl text-yellow-300 text-center font-creepster">
           5-Day Forecast for {currentWeather.location.name}!
         </h2>
         <WeeklyForecast forecast={forecast} />
       </div>
-    </>
+    </div>
   );
 };
 

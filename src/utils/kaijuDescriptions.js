@@ -11,10 +11,6 @@ const kaiju = {
     alt: "https://wallpaperdelight.com/",
     name: "Snow Godzilla",
   },
-  Gigan: {
-    img: "https://art.ngfiles.com/images/2456000/2456524_gnayphin_gigan.png?f1649740003",
-    alt: "https://www.newgrounds.com/art/view/gnayphin/gigan",
-  },
   Ghidorah: {
     img: "https://i.redd.it/mlkj02877ec71.jpg",
     alt: "https://www.reddit.com/r/Monsterverse/comments/oo58zo/amazing_godzilla_king_of_the_monsters_japanese/",
@@ -26,8 +22,8 @@ const kaiju = {
     name: "Mothra",
   },
   Chill_Day: {
-    img: "https://i.redd.it/undca3pou8j91.jpg",
-    alt: "https://www.reddit.com/r/GODZILLA/comments/pjvz2i/godzilla_vs_kong_ice_cream/",
+    img: "https://wallpapercave.com/wp/wp10969543.jpg",
+    alt: "https://wallpapercave.com/",
     name: "Chill Day",
   },
 };
@@ -55,12 +51,6 @@ export function generateKaijuDescriptions(weatherCondition) {
     case "Patchy rain possible":
     case "Light rain":
     case "Moderate rain":
-      return {
-        description:
-          "Gigan lurks in the rain-soaked streets, his metallic blades glinting through the downpour. Each drop fuels his relentless march, turning light rain into a precursor of impending doom.",
-        icon: kaiju.Gigan?.img || Logo,
-        name: kaiju.Gigan?.name || "Gigan", 
-      };
     case "Heavy rain":
     case "Thundery outbreaks possible":
     case "Moderate or heavy rain with thunder":

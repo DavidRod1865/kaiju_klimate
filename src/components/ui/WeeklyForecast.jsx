@@ -1,7 +1,7 @@
 const WeeklyForecast = (forecast) => {
 
   return (
-    <div className="flex relative z-10">
+    <div className="flex flex-col md:flex-row">
       {forecast.forecast.map((day) => (
         <div
           key={day.date}
@@ -23,16 +23,16 @@ const WeeklyForecast = (forecast) => {
               <span className="text-center">{day.kaijuName} Incoming!</span>
             </div>
           </div>
-          <h2 className="text-sm">
+          <h2 className="text-lg">
             {new Date(day.date).toLocaleDateString("en-US", {
               year: "numeric",
               month: "short",
               day: "numeric",
             })}
           </h2>
-          <h2 className="text-sm">{day.condition}</h2>
-          <p className="text-sm">Temperature: {day.temperature}°F</p>
-          <p className="text-sm">Feels like: {day.feelsLike}°F</p>
+          <h2 className="text-lg text-yellow-300">{day.condition}</h2>
+          <p className="text-lg">Temperature: {day.tempature}°F</p>
+          <p className="text-lg">Feels like: {day.feelsLike}°F</p>
         </div>
       ))}
     </div>
