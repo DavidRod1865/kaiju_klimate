@@ -1,6 +1,6 @@
 # **Kaiju Klimate**
 
-![Kaiju Klimate Logo](./assets/monster_weather_logo.png)
+![Kaiju Klimate Logo](/src/assets/monster_weather_logo.png)
 
 ## **Overview**
 Welcome to **Kaiju Klimate**—the ultimate weather app with a monstrous twist! Get your weather updates like never before, with forecasts described in terms of kaiju (giant monster) behavior. Whether it’s Godzilla basking in the sun or Mothra stirring up strong winds, Kaiju Klimate turns every weather report into an epic event.
@@ -83,4 +83,3 @@ This project is licensed under the MIT License—see the [LICENSE](LICENSE) file
 For any questions, suggestions, or feedback, feel free to reach out:
 - **Email:** david.rod1865@gmail.com
 - **GitHub:** [@DavidRod1865](https://github.com/DavidRod1865)
-```
