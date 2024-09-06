@@ -100,7 +100,7 @@ const Home = () => {
 
   return (
     <div
-      className="flex flex-col items-center min-h-screen w-full bg-cover bg-center bg-fixed"
+      className="flex flex-col items-center min-h-screen w-full md:bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${kaijuDescription.icon})` }}
     >
       <Header onSearch={handleLocationSearch} />
