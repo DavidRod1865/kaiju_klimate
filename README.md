@@ -34,11 +34,6 @@ No more boring forecasts—Kaiju Klimate makes checking the weather a daily adve
 4. **Open the app:**
    - Go to `http://localhost:3000` in your browser to see Kaiju Klimate in action!
 
-### **Raycast Integration**
-- **Check Weather:** Quickly check today’s kaiju-themed weather forecast from your Raycast command palette.
-- **Toggle Mode:** Switch between Normal and Kaiju Mode on the fly.
-- **Get 5-Day Forecast:** Access the 5-day kaiju-themed weather forecast directly from Raycast.
-
 ### **Configuration**
 - **Clerk Authentication:** Ensure your environment variables include your Clerk API key.
 - **Convex Backend:** Make sure Convex is set up to store user preferences, weather data, and more.
