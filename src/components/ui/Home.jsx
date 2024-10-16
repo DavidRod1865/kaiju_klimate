@@ -114,7 +114,7 @@ const Home = () => {
 
       <div className="flex flex-col bg-black border-yellow-300 border-4 bg-opacity-90 mb-3 p-4 md:w-fit">
         <h2 className="text-3xl md:text-5xl text-yellow-300 text-center font-creepster">
-          5-Day Forecast for {currentWeather.location.name}!
+          3-Day Forecast for {currentWeather.location.name}!
         </h2>
         <WeeklyForecast forecast={forecast} />
       </div>
