@@ -15,7 +15,7 @@ export async function fetchCurrentWeather(location) {
   export async function fetchForecast(location) {
     const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
     const response = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`
+      `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`
     );
   
     if (!response.ok) {
